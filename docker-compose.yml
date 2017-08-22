@@ -1,0 +1,10 @@
+version: '2'
+
+services: 
+  mpd:
+    build: .
+    container_name: mpd
+    network_mode: host
+    env_file:
+      - ./mpd.env
+    restart: always
